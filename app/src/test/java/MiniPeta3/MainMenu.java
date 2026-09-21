@@ -33,19 +33,19 @@ public class MainMenu {
             switch (choice) {
 
                 case "1":
-                    login.wait(scanner);
+                    login.execute(scanner);
                     break;
 
                 case "2":
-                    restaurantSearch.wait(scanner);
+                    restaurantSearch.execute(scanner);
                     break;
 
                 case "3":
-                    reservation.wait(scanner);
+                    reservation.execute(scanner);
                     break;
 
                 case "4":
-                    adminReservationManagement.wait(scanner);
+                    adminReservationManagement.execute(scanner);
                     break;
 
                 case "5":
