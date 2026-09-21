@@ -7,10 +7,7 @@ public class MainMenu {
     public void start(Scanner scanner) {
 
         Login login = new Login();
-        RestaurantSearch restaurantSearch = new RestaurantSearch();
         Reservation reservation = new Reservation();
-        AdminReservationManagement adminReservationManagement =
-                new AdminReservationManagement();
 
         boolean isRunning = true;
 
@@ -22,10 +19,8 @@ public class MainMenu {
 
             System.out.println("\n===== RESERVEBITES MAIN MENU =====");
             System.out.println("1. Login");
-            System.out.println("2. Restaurant Search");
-            System.out.println("3. Make Reservation");
-            System.out.println("4. Admin Reservation Management");
-            System.out.println("5. Exit");
+            System.out.println("2. Make Reservation");
+            System.out.println("3. Exit");
 
             System.out.print("Choose an option: ");
             String choice = scanner.nextLine();
@@ -37,18 +32,10 @@ public class MainMenu {
                     break;
 
                 case "2":
-                    restaurantSearch.execute(scanner);
-                    break;
-
-                case "3":
                     reservation.execute(scanner);
                     break;
 
-                case "4":
-                    adminReservationManagement.execute(scanner);
-                    break;
-
-                case "5":
+                case "3":
                     System.out.println("Thank you for using ReserveBites!");
                     isRunning = false;
                     break;

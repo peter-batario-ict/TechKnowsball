@@ -1,31 +1,38 @@
 package MiniPeta3;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
+@RunWith(JUnit4.class)
 public class MainMenuTest {
 
     @Test
-    public void testMainMenuLogin() {
+    public void testMainMenuLoginAndReservation() {
 
-        // Simulated user input
         String input =
-                "1\n" +                  // Main Menu → Login
-                        "user@gmail.com\n" +      // Email
-                        "123456\n" +              // Password
-                        "User\n" +                // Role
-                        "Email\n" +               // Login Method
-                        "5\n";                   // Main Menu → Exit
+                "1\n" +
+                        "user@gmail.com\n" +
+                        "123456\n" +
+                        "User\n" +
+                        "Email\n" +
 
-        // Convert input into a virtual keyboard
+                        "2\n" +
+                        "ReserveBites Restaurant\n" +
+                        "September 25, 2026\n" +
+                        "7:00 PM\n" +
+                        "Peter\n" +
+
+                        "3\n";
+
         ByteArrayInputStream inputStream =
                 new ByteArrayInputStream(input.getBytes());
 
         Scanner scanner = new Scanner(inputStream);
 
-        // Start Main Menu
         MainMenu mainMenu = new MainMenu();
 
         mainMenu.start(scanner);
