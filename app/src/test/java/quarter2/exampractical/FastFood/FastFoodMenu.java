@@ -1,4 +1,4 @@
-package quarter2.exampractical;
+package quarter2.exampractical.FastFood;
 
 import java.util.Scanner;
 
