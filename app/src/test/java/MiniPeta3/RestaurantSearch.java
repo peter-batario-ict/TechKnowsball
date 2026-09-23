@@ -7,10 +7,9 @@ package MiniPeta3;
         public void search(Scanner scanner) {
 
             String[] restaurants = {
-                    "Jollibee",
-                    "McDonald's",
-                    "Mang Inasal",
-                    "Chowking",
+                    "Jolley",
+                    "McDo",
+                    "Chow",
                     "Shakey's",
                     "Greenwich",
                     "Pizza Hut",
