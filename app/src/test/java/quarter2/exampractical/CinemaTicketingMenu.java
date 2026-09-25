@@ -1,4 +1,4 @@
-package com.example.quarter2.practicalexam;
+package quarter2.exampractical;
 
 import java.util.Scanner;
 
