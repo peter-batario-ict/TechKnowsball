@@ -1,7 +1,6 @@
-package quarter2.exampractical;
+package com.example.quarter2.practicalexam;
 
 import org.junit.Test;
-
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
@@ -10,22 +9,36 @@ public class CinemaTicketingTest {
     @Test
     public void testCinemaFlow() {
 
-
         StringBuilder automatedInput = new StringBuilder();
+
         System.out.println("--- GENERATING CINEMA TEST DATA ---");
-// Step 1: Test underage restriction (< 18)
-        automatedInput.append("1\n"); // Choose Buy Ticket
-        automatedInput.append("15\n"); // Enter age 15 (Expected: Access Denied)
-// Step 2: Test legal age access (>= 18)
-        automatedInput.append("1\n"); // Choose Buy Ticket
-        automatedInput.append("20\n"); // Enter age 20 (Expected: Ticket Printed)
-// Step 3: Test snack purchase
-        automatedInput.append("2\n"); // Choose Buy Snacks
-// Step 4: Exit system
-        automatedInput.append("3\n"); // Choose Exit
+
+        // Test 1: Buy Ticket - Underage
+        automatedInput.append("1\n");
+        automatedInput.append("15\n");
+
+        // Test 2: Buy Ticket - Legal Age
+        automatedInput.append("1\n");
+        automatedInput.append("20\n");
+
+        // Test 3: Buy Snacks
+        automatedInput.append("2\n");
+
+        // Test 4: Invalid Menu Choice
+        automatedInput.append("5\n");
+
+        // Test 5: Exit System
+        automatedInput.append("3\n");
+
         System.out.println("--- TEST DATA GENERATION COMPLETE ---\n");
-        ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
+
+        ByteArrayInputStream inputStream =
+                new ByteArrayInputStream(
+                        automatedInput.toString().getBytes()
+                );
+
         Scanner scanner = new Scanner(inputStream);
+
         CinemaMenu cinemaSystem = new CinemaMenu();
         cinemaSystem.start(scanner);
     }
