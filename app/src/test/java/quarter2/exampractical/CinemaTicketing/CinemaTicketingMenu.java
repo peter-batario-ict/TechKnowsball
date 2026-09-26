@@ -10,7 +10,7 @@ public class CinemaTicketingMenu {
 
         double ticketPrice = 0;
         double snackTotal = 0;
-        double total = 0;
+        double total;
 
         while (running) {
 
@@ -21,6 +21,14 @@ public class CinemaTicketingMenu {
             System.out.println("2. Buy Snacks");
             System.out.println("3. Exit");
             System.out.print("Enter your choice: ");
+
+            int choice = scanner.nextInt();
+
+            if (choice == 1) {
+
+                System.out.print("Enter your age: ");
+                int age = scanner.nextInt();
+            }
         }
     }
 }
