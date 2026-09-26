@@ -8,6 +8,10 @@ public class CinemaTicketingMenu {
 
         boolean running = true;
 
+        double ticketPrice = 0;
+        double snackTotal = 0;
+        double total = 0;
+
         while (running) {
 
             System.out.println("\n==============================");
