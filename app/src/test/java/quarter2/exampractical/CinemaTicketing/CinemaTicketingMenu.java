@@ -64,6 +64,11 @@ public class CinemaTicketingMenu {
                 System.out.println("TOTAL: ₱" + total);
                 System.out.println("==============================");
                 System.out.println("Thank you for using the Cinema Ticketing System!");
+                running = false;
+
+            } else {
+
+                System.out.println("Invalid choice.");
 
             }
         }
