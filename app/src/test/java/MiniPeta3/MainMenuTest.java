@@ -1,38 +1,47 @@
 package MiniPeta3;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.junit.runners.JUnit4;
 
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-@RunWith(JUnit4.class)
 public class MainMenuTest {
 
     @Test
-    public void testMainMenuLoginAndReservation() {
+    public void testReserveBitesSystem() {
 
-        String input =
-                "1\n" +
-                        "user@gmail.com\n" +
-                        "123456\n" +
-                        "User\n" +
-                        "Email\n" +
+        StringBuilder simulatedUserInput = new StringBuilder();
 
-                        "2\n" +
-                        "ReserveBites Restaurant\n" +
-                        "September 25, 2026\n" +
-                        "7:00 PM\n" +
-                        "Peter\n" +
+        // 1. Login
+        simulatedUserInput.append("1\n");
 
-                        "3\n";
+        // Login information
+        simulatedUserInput.append("user@gmail.com\n");
+        simulatedUserInput.append("123456\n");
+        simulatedUserInput.append("User\n");
+        simulatedUserInput.append("Email\n");
 
+        // 2. Restaurant Search
+        simulatedUserInput.append("2\n");
+
+        // 3. Make Reservation
+        simulatedUserInput.append("3\n");
+
+        // 4. Admin Reservation Management
+        simulatedUserInput.append("4\n");
+
+        // 5. Exit
+        simulatedUserInput.append("5\n");
+
+        // Convert simulated input into a Scanner
         ByteArrayInputStream inputStream =
-                new ByteArrayInputStream(input.getBytes());
+                new ByteArrayInputStream(
+                        simulatedUserInput.toString().getBytes()
+                );
 
         Scanner scanner = new Scanner(inputStream);
 
+        // Run the actual ReserveBites MainMenu
         MainMenu mainMenu = new MainMenu();
 
         mainMenu.start(scanner);
