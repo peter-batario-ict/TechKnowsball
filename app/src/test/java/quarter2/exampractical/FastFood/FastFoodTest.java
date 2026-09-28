@@ -4,8 +4,9 @@ import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
 
-public class FastFoodTest {
+import quarter2.exampractical.FastFood.FastFoodMenu;
 
+public class FastFoodTest {
     @Test
     public void testFastFoodFlow() {
         StringBuilder automatedInput = new StringBuilder();

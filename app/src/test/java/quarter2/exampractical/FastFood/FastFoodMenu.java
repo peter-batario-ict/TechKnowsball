@@ -4,16 +4,18 @@ import java.util.Scanner;
 
 public class FastFoodMenu {
 
+
     public void start(Scanner scanner) {
+        int choice = 0;
 
-        boolean isRunning = true;
-
-        while (isRunning) {
-
-            System.out.println("===== FAST FOOD MENU =====");
+        while (choice != 3) {
+            System.out.println("\n===== FAST FOOD MENU =====");
             System.out.println("1. Order Burger");
             System.out.println("2. Order Fries");
             System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+
+            choice = Integer.parseInt(scanner.nextLine());
         }
     }
 }
