@@ -13,10 +13,17 @@ public class FastFoodMenu {
     private int friesCount;
     private double total;
 
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        new FastFoodMenu().start(scanner);
+        scanner.close();
+    }
+
     public void start(Scanner scanner) {
+        resetOrder();
         boolean running = true;
 
-        while (running) {
+        while (running && scanner.hasNextLine()) {
             printMainMenu();
             int choice = readChoice(scanner);
 
@@ -30,10 +37,13 @@ public class FastFoodMenu {
                 case 3:
                     running = false;
                     break;
+                default:
+                    System.out.println("Invalid choice. Please enter 1, 2, or 3.");
             }
         }
 
         printReceipt();
+
     }
 
     private void printMainMenu() {
@@ -64,6 +74,8 @@ public class FastFoodMenu {
                 total += BURGER_PRICE;
                 System.out.println("Added: Solo Burger.");
                 break;
+            default:
+                System.out.println("Invalid burger option. Returning to main menu.");
         }
     }
 
@@ -86,7 +98,22 @@ public class FastFoodMenu {
     }
 
     private int readChoice(Scanner scanner) {
-        return Integer.parseInt(scanner.nextLine().trim());
+        if (!scanner.hasNextLine()) {
+            return -1;
+        }
+        String line = scanner.nextLine().trim();
+        try {
+            return Integer.parseInt(line);
+        } catch (NumberFormatException e) {
+            return -1;
+        }
+    }
+
+    private void resetOrder() {
+        soloCount = 0;
+        comboCount = 0;
+        friesCount = 0;
+        total = 0.0;
     }
 
     private String format(double amount) {
