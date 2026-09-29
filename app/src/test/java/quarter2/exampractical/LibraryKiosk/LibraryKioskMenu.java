@@ -19,7 +19,15 @@ public class LibraryKioskMenu {
                 System.out.println("Borrow Book selected.");
 
             } else if (choice == 2) {
-                System.out.println("Pay Fines selected.");
+                System.out.println("Enter payment:");
+                int payment = scanner.nextInt();
+
+                if (payment < 15) {
+                    System.out.println("Insufficient Payment");
+                } else {
+                    int change = payment - 15;
+                    System.out.println("Change: " + change);
+                }
 
             } else if (choice == 3) {
                 running = false;
