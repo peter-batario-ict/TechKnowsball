@@ -31,20 +31,32 @@ public class  GymMenu{
                             System.out.println("EMAIL: ###########");
                             System.out.println("MEMBERSHIP: REGULAR\n");
                             System.out.println("TRAINER UNAVAILABLE, NEED TO UPGRADE MEMBERSHIP\n");
+                            System.out.println("=========================");
+                            System.out.println("       3. EXIT           ");
+                            System.out.println("=========================\n");
 
-                        }else if(tierInput.equals("2")){
+
+                        }else if(tierInput.equals("2")) {
                             System.out.println("--------------USER PROFILE-----------------");
                             System.out.println("NAME:   ######### ");
                             System.out.println("EMAIL: ###########");
                             System.out.println("MEMBERSHIP: REGULAR\n");
-                            System.out.println("USER HAS SUCCESFULLY HIRED A TRAINER");
+                            System.out.println("USER HAS SUCCESFULLY HIRED A TRAINER\n");
+
+                            System.out.println("=========================");
+                            System.out.println("       3. EXIT           ");
+                            System.out.println("=========================\n");
+
+
 
                         }
-                        break;
+                    } break;
+                case "3":
+                    System.out.println("USER HAS SUCCESFULLY EXITED THE GYM!\n");
+                    break;
+                default:
+                    break;
 
-
-
-                    }
 
             }
 
