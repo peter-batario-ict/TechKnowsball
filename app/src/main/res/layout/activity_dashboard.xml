@@ -1,10 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+  <androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="ReserveBites.Dashboard">
+
+  <Button
+      android:id="@+id/button2"
+      android:layout_width="67dp"
+      android:layout_height="91dp"
+      android:backgroundTint="#85EB88"
+      android:fontFamily="sans-serif-condensed-medium"
+      android:text="12 total reservation"
+      android:textSize="6sp"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="174dp" />
+
+  <Button
+      android:id="@+id/button13"
+      android:layout_width="67dp"
+      android:layout_height="91dp"
+      android:backgroundTint="#85EB88"
+      android:fontFamily="sans-serif-condensed-medium"
+      android:text="3 Upcoming this week"
+      android:textSize="6sp"
+      tools:layout_editor_absoluteX="93dp"
+      tools:layout_editor_absoluteY="174dp" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="308dp"
+      android:layout_height="50dp"
+      android:fontFamily="sans-serif-black"
+      android:text="Hi, Juan Dela Cruz!"
+      android:textColor="#000000"
+      android:textSize="34sp"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="61dp" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:fontFamily="sans-serif-medium"
+      android:text="Ready to find your next favorite meal?"
+      android:textColor="#070707"
+      android:textColorLink="#000000"
+      tools:layout_editor_absoluteX="16dp"
+      tools:layout_editor_absoluteY="111dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
