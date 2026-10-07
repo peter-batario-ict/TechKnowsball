@@ -1,9 +1,12 @@
-package com.example.surelypresent.quarter2.practicalexam;
+package quarter2.exampractical.GymAccess;
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;
+
 public class GymAccessTest {
+
     @Test
+
     public void testGymFlow() {
         StringBuilder automatedInput = new StringBuilder();
         System.out.println("\n--- GENERATING GYM TEST DATA ---");
@@ -20,5 +23,7 @@ public class GymAccessTest {
         System.out.println("--- TEST DATA GENERATION COMPLETE ---\n");
         ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
         Scanner scanner = new Scanner(inputStream);
+        GymMenu gymSystem = new GymMenu();
+        gymSystem.start(scanner);
     }
 }
