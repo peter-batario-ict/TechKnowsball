@@ -7,4 +7,85 @@
     android:layout_height="match_parent"
     tools:context="ReserveBites.Mainfeature">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="439dp"
+        android:layout_height="28dp"
+        android:foreground="@drawable/screenshot_2026_10_08_131202"
+        android:text="Button"
+        tools:layout_editor_absoluteX="-17dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ReserveBites"
+        android:textColor="#3F8024"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:foreground="@drawable/screenshot_2026_10_08_131533"
+        android:text="Button"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="39dp"
+        android:layout_height="33dp"
+        android:foreground="@drawable/screenshot_2026_10_08_131715"
+        android:text="Button"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="@drawable/screenshot_2026_10_08_131909"
+        android:text="Button"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Favorites"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="50dp"
+        android:layout_height="37dp"
+        android:foreground="@drawable/screenshot_2026_10_08_132139"
+        android:text="Button"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="126dp"
+        android:layout_height="22dp"
+        android:text="Your saved restaurants for easy access and quick reservations."
+        android:textSize="8sp"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="335dp"
+        android:layout_height="33dp"
+        android:text="Button"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="132dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
