@@ -12,6 +12,17 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+        android:textColor="#396A25"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Login to continue to your account."
         android:textColor="#396A25"
         android:textSize="12sp"
@@ -23,17 +34,22 @@
         android:id="@+id/imageView2"
         android:layout_width="572dp"
         android:layout_height="416dp"
+        android:layout_marginTop="4dp"
+        android:forceHasOverlappingRendering="true"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.495"
         app:srcCompat="@mipmap/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="-80dp"
-        tools:layout_editor_absoluteY="-185dp" />
+        tools:layout_editor_absoluteX="-80dp" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="572dp"
         android:layout_height="416dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
         app:srcCompat="@mipmap/ic_launcher_foreground"
-        tools:layout_editor_absoluteX="-80dp"
-        tools:layout_editor_absoluteY="504dp" />
+        tools:layout_editor_absoluteX="-81dp" />
 
     <TextView
         android:id="@+id/textView2"
@@ -92,6 +108,17 @@
         tools:layout_editor_absoluteY="477dp" />
 
     <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="#396A25"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="667dp" />
+
+    <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -100,7 +127,7 @@
         android:textSize="10sp"
         android:textStyle="bold"
         tools:layout_editor_absoluteX="200dp"
-        tools:layout_editor_absoluteY="590dp" />
+        tools:layout_editor_absoluteY="578dp" />
 
     <TextView
         android:id="@+id/textView7"
@@ -136,6 +163,17 @@
         tools:layout_editor_absoluteY="423dp" />
 
     <Button
+        android:id="@+id/button12"
+        android:layout_width="243dp"
+        android:layout_height="47dp"
+        android:text="Login with Google"
+        android:textColor="#396A25"
+        android:textDirection="firstStrongRtl"
+        android:textIsSelectable="true"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="607dp" />
+
+    <Button
         android:id="@+id/button4"
         android:layout_width="243dp"
         android:layout_height="47dp"
@@ -147,5 +185,14 @@
         android:textIsSelectable="true"
         tools:layout_editor_absoluteX="84dp"
         tools:layout_editor_absoluteY="515dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="97dp"
+        android:layout_height="56dp"
+        android:foreground="@drawable/app_logo_app_name__text__tagline__text__welcome_message__text__email_label__text__email_input_field_email_icon_password_label__text__password_input_field_showhide_password_icon_forgot_password__te"
+        android:text="Button"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="93dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
