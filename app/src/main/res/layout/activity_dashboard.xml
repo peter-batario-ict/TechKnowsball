@@ -1,115 +1,160 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="ReserveBites.Dashboard">
-
-  <!-- TRIPLE BAR MENU -->
-
-  <!-- WELCOME MESSAGE -->
-
-  <ImageView
-      android:id="@+id/tripleBarIcon"
-      android:layout_width="26dp"
-      android:layout_height="17dp"
-      android:layout_marginTop="28dp"
-      android:layout_marginEnd="368dp"
-      android:contentDescription="Menu"
-      android:scaleType="fitCenter"
-      android:src="@drawable/triplebar"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
-
-  <TextView
-      android:id="@+id/textView"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_marginStart="16dp"
-      android:layout_marginEnd="16dp"
-      android:layout_marginTop="70dp"
-      android:fontFamily="sans-serif-black"
-      android:text="Hi, Juan Dela Cruz!"
-      android:textColor="#000000"
-      android:textSize="24sp"
-      app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintEnd_toEndOf="parent" />
-
-  <!-- SUBTITLE -->
-  <TextView
-      android:id="@+id/textView2"
-      android:layout_width="0dp"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="4dp"
-      android:layout_marginEnd="16dp"
-      android:fontFamily="sans-serif-medium"
-      android:text="Ready to find your next favorite meal?"
-      android:textColor="#070707"
-      android:textSize="12sp"
-      app:layout_constraintTop_toBottomOf="@id/textView"
-      app:layout_constraintStart_toStartOf="@id/textView"
-      app:layout_constraintEnd_toEndOf="parent" />
-
-  <!-- TOTAL RESERVATIONS -->
-
-  <!-- UPCOMING RESERVATIONS -->
-
-  <!-- FOOD IMAGE -->
-  <ImageView
-      android:id="@+id/foodImage"
-      android:layout_width="31dp"
-      android:layout_height="32dp"
-      android:layout_marginStart="16dp"
-      android:layout_marginEnd="16dp"
-      android:contentDescription="Food image"
-      android:scaleType="fitCenter"
-      android:src="@drawable/food"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintHorizontal_bias="0.08"
-      app:layout_constraintStart_toStartOf="parent"
-      tools:layout_editor_absoluteY="16dp" />
-
-  <TextView
-      android:id="@+id/textView16"
-      android:layout_width="80dp"
-      android:layout_height="26dp"
-      android:fontFamily="sans-serif-black"
-      android:text="Reserve"
-      android:textColor="#1E4D07"
-      android:textColorHighlight="#454D27"
-      android:textColorLink="#E28585"
-      android:textSize="20sp"
-      tools:layout_editor_absoluteX="75dp"
-      tools:layout_editor_absoluteY="22dp" />
-
-  <TextView
-      android:id="@+id/textView17"
-      android:layout_width="80dp"
-      android:layout_height="26dp"
-      android:fontFamily="sans-serif-black"
-      android:text="Reserve"
-      android:textColor="#1E4D07"
-      android:textColorHighlight="#454D27"
-      android:textColorLink="#E28585"
-      android:textSize="20sp"
-      tools:layout_editor_absoluteX="75dp"
-      tools:layout_editor_absoluteY="22dp" />
-
-  <TextView
-      android:id="@+id/textView18"
-      android:layout_width="80dp"
-      android:layout_height="26dp"
-      android:fontFamily="sans-serif-black"
-      android:text="Bites"
-      android:textColor="#4CB31A"
-      android:textColorHighlight="#454D27"
-      android:textColorLink="#E28585"
-      android:textSize="20sp"
-      tools:layout_editor_absoluteX="148dp"
-      tools:layout_editor_absoluteY="22dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F7F9F7">
+    <ScrollView android:id="@+id/dashboardScroll" android:layout_width="0dp" android:layout_height="0dp" android:fillViewport="true" android:scrollbars="none" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toTopOf="@id/bottomNavigation" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp" android:paddingBottom="22dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="52dp" android:orientation="horizontal" android:gravity="center_vertical">
+                <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="☰" android:textSize="25sp" android:textColor="#247A48"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="ReserveBites" android:textSize="21sp" android:textColor="#247A48" android:textStyle="bold" android:layout_weight="1"/>
+                <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_notification" android:contentDescription="ic_notification"/>
+                <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/ic_profile" android:contentDescription="ic_profile" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hi, Juan Dela Cruz! 👋" android:textSize="21sp" android:textColor="#242424" android:textStyle="bold" android:layout_marginTop="12dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ready to find your next favorite meal?" android:textSize="12sp" android:textColor="#737B75" android:layout_marginTop="4dp"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="110dp" android:orientation="horizontal" android:layout_marginTop="18dp" android:baselineAligned="false">
+                <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:cardBackgroundColor="#EFF8F1" app:cardCornerRadius="12dp" app:strokeWidth="1dp" app:strokeColor="#E0E9E1">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="4dp">
+                        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_calendar" android:contentDescription="ic_calendar"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:textSize="21sp" android:textColor="#247A48" android:textStyle="bold" android:layout_marginTop="5dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total Reservations" android:textSize="11sp" android:textColor="#4B554F" android:gravity="center" android:textAlignment="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="8dp" app:cardBackgroundColor="#FFF8EF" app:cardCornerRadius="12dp" app:strokeWidth="1dp" app:strokeColor="#E0E9E1">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="4dp">
+                        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_clock" android:contentDescription="ic_clock"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:textSize="21sp" android:textColor="#E49A27" android:textStyle="bold" android:layout_marginTop="5dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Upcoming This week" android:textSize="11sp" android:textColor="#4B554F" android:gravity="center" android:textAlignment="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="8dp" app:cardBackgroundColor="#EFF8F1" app:cardCornerRadius="12dp" app:strokeWidth="1dp" app:strokeColor="#E0E9E1">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center" android:padding="4dp">
+                        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_check" android:contentDescription="ic_check"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="6" android:textSize="21sp" android:textColor="#247A48" android:textStyle="bold" android:layout_marginTop="5dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Confirmed All time" android:textSize="11sp" android:textColor="#4B554F" android:gravity="center" android:textAlignment="center"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="90dp" android:orientation="horizontal" android:layout_marginTop="8dp" android:baselineAligned="false">
+                <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:cardBackgroundColor="#FFF8EF" app:cardCornerRadius="12dp" app:strokeWidth="1dp" app:strokeColor="#E0E9E1">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:padding="6dp">
+                        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_hourglass" android:contentDescription="ic_hourglass"/>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2 Pending" android:textSize="15sp" android:textColor="#E49A27" android:textStyle="bold"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="This week" android:textSize="11sp" android:textColor="#555555"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:layout_marginStart="8dp" app:cardBackgroundColor="#FFF2F1" app:cardCornerRadius="12dp" app:strokeWidth="1dp" app:strokeColor="#E0E9E1">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:padding="6dp">
+                        <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_cancel" android:contentDescription="ic_cancel"/>
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="10dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4 Cancelled" android:textSize="15sp" android:textColor="#D9433B" android:textStyle="bold"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="All time" android:textSize="11sp" android:textColor="#555555"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="14dp" app:cardElevation="2dp" android:layout_marginTop="16dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="13dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="Upcoming Reservation" android:textSize="16sp" android:textColor="#242424" android:textStyle="bold" android:layout_weight="1"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="View all" android:textSize="12sp" android:textColor="#247A48" android:textStyle="bold"/>
+                    </LinearLayout>
+                    <ImageView android:layout_width="match_parent" android:layout_height="145dp" android:src="@drawable/grillmaster" android:contentDescription="grillmaster" android:layout_marginTop="10dp" android:scaleType="centerCrop"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TheGrillMaster Makati" android:textSize="16sp" android:textColor="#242424" android:textStyle="bold" android:layout_marginTop="10dp"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="7dp" android:gravity="top">
+                        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/ic_location" android:contentDescription="ic_location"/>
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="Paseo Tesoro Building, 822 Antonio Arnaiz Ave, Makati City, Metro Manila" android:textSize="11sp" android:textColor="#777777" android:layout_weight="1" android:layout_marginStart="6dp"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ Confirmed" android:textSize="12sp" android:textColor="#247A48" android:textStyle="bold" android:layout_marginTop="8dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="August 7, 2026 • 6:30 PM • 4 Guests" android:textSize="12sp" android:textColor="#555555" android:layout_marginTop="7dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="14dp" app:cardElevation="2dp" android:layout_marginTop="15dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="13dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick Actions" android:textSize="16sp" android:textColor="#242424" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="92dp" android:orientation="horizontal" android:layout_marginTop="10dp" android:baselineAligned="false">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_calendar" android:contentDescription="ic_calendar"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Make Reservations" android:textSize="11sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center" android:layout_marginStart="7dp">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_search" android:contentDescription="ic_search"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Browse Restaurants" android:textSize="11sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center" android:layout_marginStart="7dp">
+                            <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_heart" android:contentDescription="ic_heart"/>
+                            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="My Favorites" android:textSize="11sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="6dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="14dp" app:cardElevation="2dp" android:layout_marginTop="15dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="13dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reservation Status Overview" android:textSize="16sp" android:textColor="#242424" android:textStyle="bold"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:gravity="center_vertical">
+                        <FrameLayout android:layout_width="112dp" android:layout_height="112dp">
+                            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/status_donut" android:contentDescription="status_donut"/>
+                            <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:gravity="center">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12" android:textSize="22sp" android:textColor="#247A48" android:textStyle="bold"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total" android:textSize="11sp" android:textColor="#777777"/>
+                            </LinearLayout>
+                        </FrameLayout>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:layout_marginStart="18dp">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="● Confirmed 6 (50%)" android:textSize="12sp" android:textColor="#247A48" android:layout_marginBottom="10dp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="● Pending 2 (17%)" android:textSize="12sp" android:textColor="#E49A27" android:layout_marginBottom="10dp"/>
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="● Cancelled 4 (33%)" android:textSize="12sp" android:textColor="#D9433B" android:layout_marginBottom="10dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#FFFFFF" app:cardCornerRadius="14dp" app:cardElevation="2dp" android:layout_marginTop="15dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="13dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Recommended For You" android:textSize="16sp" android:textColor="#242424" android:textStyle="bold"/>
+                    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:scrollbars="none">
+                        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
+                            <LinearLayout android:layout_width="155dp" android:layout_height="wrap_content" android:orientation="vertical">
+                                <ImageView android:layout_width="match_parent" android:layout_height="96dp" android:src="@drawable/buffet101" android:contentDescription="buffet101" android:scaleType="centerCrop"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buffet 101" android:textSize="13sp" android:textColor="#242424" android:textStyle="bold" android:layout_marginTop="6dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SM MOA, Pasay City" android:textSize="11sp" android:textColor="#777777"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="★ 4.7 (62.8K)" android:textSize="11sp" android:textColor="#B77B14" android:layout_marginTop="4dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="155dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="10dp">
+                                <ImageView android:layout_width="match_parent" android:layout_height="96dp" android:src="@drawable/guevarras" android:contentDescription="guevarras" android:scaleType="centerCrop"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Guevarra’s" android:textSize="13sp" android:textColor="#242424" android:textStyle="bold" android:layout_marginTop="6dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="San Juan, Manila" android:textSize="11sp" android:textColor="#777777"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="★ 4.5 (3,589)" android:textSize="11sp" android:textColor="#B77B14" android:layout_marginTop="4dp"/>
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="155dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="10dp">
+                                <ImageView android:layout_width="match_parent" android:layout_height="96dp" android:src="@drawable/thealley" android:contentDescription="thealley" android:scaleType="centerCrop"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="The Alley Manila Bay" android:textSize="13sp" android:textColor="#242424" android:textStyle="bold" android:layout_marginTop="6dp"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ayala Malls Manila Bay" android:textSize="11sp" android:textColor="#777777"/>
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="★ 4.9 (8,451)" android:textSize="11sp" android:textColor="#B77B14" android:layout_marginTop="4dp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:layout_width="0dp" android:layout_height="65dp" android:orientation="horizontal" android:id="@+id/bottomNavigation" android:background="#FFFFFF" android:elevation="6dp" android:gravity="center_vertical" android:paddingStart="5dp" android:paddingEnd="5dp" android:baselineAligned="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_dashboard" android:contentDescription="ic_dashboard"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dashboard" android:textSize="9sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_explore" android:contentDescription="ic_explore"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_reservations" android:contentDescription="ic_reservations"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reservations" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_heart" android:contentDescription="ic_heart"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Favorites" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_profile" android:contentDescription="ic_profile"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Profile" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout
