@@ -5,13 +5,182 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:foregroundTint="#FFFFFF"
     tools:context="ReserveBites.Mainfeature">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="106dp"
+        android:layout_height="91dp"
+        app:srcCompat="@drawable/screenshot_2026_10_14_132410"
+        tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="85dp" />
 
     <TextView
         android:id="@+id/textView9"
+        android:layout_width="89dp"
+        android:layout_height="26dp"
+        android:fontFamily="sans-serif"
+        android:foregroundTint="#F4F4F4"
+        android:text="My Account"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Juan Dela Cruz"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="108dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="134dp"
-        tools:layout_editor_absoluteY="48dp" />
+        android:text="Juan.dela.cruz@gmail.com"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="127dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="437dp"
+        android:layout_height="47dp"
+        android:foreground="@drawable/screenshot_2026_10_08_131202"
+        android:text="Button"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,MissingConstraints,VisualLintBounds,VisualLintButtonSize,VisualLintSystemUi"
+        tools:layout_editor_absoluteX="-13dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="342dp"
+        android:layout_height="55dp"
+        android:foreground="@drawable/screenshot_2026_10_14_133853"
+        android:text="Button"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="218dp"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="343dp"
+        android:layout_height="53dp"
+        android:foreground="@drawable/screenshot_2026_10_14_133953"
+        android:text="Button"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="273dp"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="344dp"
+        android:layout_height="52dp"
+        android:foreground="@drawable/screenshot_2026_10_14_134047"
+        android:text="Button"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="326dp"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="342dp"
+        android:layout_height="52dp"
+        android:foreground="@drawable/screenshot_2026_10_14_134145"
+        android:text="@string/button"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="378dp"
+        tools:ignore="MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:foreground="@drawable/screenshot_2026_10_14_134336"
+        android:text="Button"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="430dp"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="344dp"
+        android:layout_height="60dp"
+        android:foreground="@drawable/screenshot_2026_10_14_134411"
+        android:text="Button"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="490dp"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button21"
+        android:layout_width="176dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="130dp"
+        android:backgroundTint="#5EBC12"
+        android:text="Log Out"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="571dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button23"
+        android:layout_width="97dp"
+        android:layout_height="80dp"
+        android:foreground="@drawable/screenshot_2026_10_14_135227"
+        android:text="Button"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="651dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button24"
+        android:layout_width="93dp"
+        android:layout_height="76dp"
+        android:foreground="@drawable/screenshot_2026_10_14_135310"
+        android:text="Button"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,TextContrastCheck"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="652dp" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="93dp"
+        android:layout_height="71dp"
+        android:foreground="@drawable/screenshot_2026_10_14_135407"
+        android:text="Button"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="655dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button26"
+        android:layout_width="79dp"
+        android:layout_height="77dp"
+        android:foreground="@drawable/screenshot_2026_10_14_135504"
+        android:text="Button"
+        tools:layout_editor_absoluteX="60dp"
+        tools:layout_editor_absoluteY="651dp"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/button27"
+        android:layout_width="69dp"
+        android:layout_height="80dp"
+        android:foreground="@drawable/screenshot_2026_10_14_135759"
+        android:text="Button"
+        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteY="653dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
