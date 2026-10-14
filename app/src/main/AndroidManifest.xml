@@ -45,6 +45,10 @@
             android:name="ReserveBites.Mainfeature"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="ReserveBites.Mainfeatures"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>
