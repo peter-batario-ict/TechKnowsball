@@ -196,8 +196,8 @@
         android:foreground="@drawable/screenshot_2026_10_14_135504"
         android:text="Button"
         tools:ignore="HardcodedText,MissingConstraints"
-        tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="651dp" />
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="652dp" />
 
     <Button
         android:id="@+id/button27"
