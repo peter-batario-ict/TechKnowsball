@@ -69,7 +69,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.496"
+        app:layout_constraintVertical_bias="0.498"
         app:srcCompat="@mipmap/ic_launcher_foreground"
         tools:ignore="ContentDescription,VisualLintBounds" />
 
@@ -219,42 +219,6 @@
         tools:ignore="HardcodedText,SmallSp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="243dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="340dp"
-        android:text="Enter Your Email"
-        android:textColor="#396A25"
-        android:textDirection="firstStrongRtl"
-        android:textIsSelectable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="243dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="422dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="262dp"
-        android:text="Enter your Password"
-        android:textColor="#396A25"
-        android:textDirection="firstStrongRtl"
-        android:textIsSelectable="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintOverlap" />
-
-    <Button
         android:id="@+id/button12"
         android:layout_width="243dp"
         android:layout_height="47dp"
@@ -309,5 +273,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="342dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="Enter Your Email"
+        android:textColor="#396A25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="262dp"
+        android:ems="10"
+        android:inputType="numberPassword"
+        android:text="Enter your Password"
+        android:textColor="#396A25"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
