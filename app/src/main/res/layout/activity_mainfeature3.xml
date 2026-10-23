@@ -48,19 +48,6 @@
         tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize,VisualLintOverlap,VisualLintBounds" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="422dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="689dp"
-        android:foreground="@drawable/screenshot_2026_10_08_131202"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText,VisualLintButtonSize,VisualLintBounds" />
-
-    <Button
         android:id="@+id/button10"
         android:layout_width="48dp"
         android:layout_height="48dp"
@@ -68,25 +55,7 @@
         android:text="Button"
         tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,VisualLintBounds"
         tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="34dp" />
-
-    <Button
-        android:id="@+id/button12"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="333dp"
-        android:layout_marginBottom="661dp"
-        android:foreground="@drawable/screenshot_2026_10_08_131715"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText,TextSizeCheck" />
+        tools:layout_editor_absoluteY="33dp" />
 
     <TextView
         android:id="@+id/textView12"
@@ -106,19 +75,9 @@
         android:layout_height="wrap_content"
         android:foreground="@drawable/screenshot_2026_10_08_131909"
         android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints"
+        tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap"
         tools:layout_editor_absoluteX="318dp"
         tools:layout_editor_absoluteY="46dp" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:foreground="@drawable/screenshot_2026_10_08_132139"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="88dp" />
 
     <TextView
         android:id="@+id/textView16"
@@ -308,7 +267,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView18"
@@ -322,7 +282,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView19"
@@ -336,7 +297,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView20"
@@ -350,7 +312,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextContrastCheck,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView21"
@@ -364,7 +327,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,VisualLintOverlap" />
 
     <TextView
         android:id="@+id/textView22"
@@ -378,7 +342,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView23"
@@ -393,7 +358,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <TextView
         android:id="@+id/textView24"
@@ -408,6 +374,52 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="321dp"
+        android:layout_marginBottom="649dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/food"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="56dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="602dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/screenshot_2026_10_08_132139"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="408dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="700dp"
+        android:foreground="@drawable/screenshot_2026_10_08_131202"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,DuplicateSpeakableTextCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
