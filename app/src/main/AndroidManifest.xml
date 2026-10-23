@@ -16,17 +16,8 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MyApplicationTechKnowsball"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Login"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="RedundantLabel" />
         <activity
             android:name="ReserveBites.Login"
             android:exported="true"
@@ -43,10 +34,6 @@
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name="ReserveBites.Mainfeature"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name="ReserveBites.Mainfeatures"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
