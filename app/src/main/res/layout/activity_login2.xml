@@ -239,7 +239,6 @@
         android:layout_marginTop="92dp"
         android:layout_marginEnd="157dp"
         android:layout_marginBottom="591dp"
-        android:foreground="@drawable/app_logo_app_name__text__tagline__text__welcome_message__text__email_label__text__email_input_field_email_icon_password_label__text__password_input_field_showhide_password_icon_forgot_password__te"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
