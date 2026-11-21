@@ -5,7 +5,7 @@
                 <TextView android:layout_width="35dp" android:layout_height="wrap_content" android:text="☰" android:textSize="25sp" android:textColor="#247A48"/>
                 <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:text="ReserveBites" android:textSize="21sp" android:textColor="#247A48" android:textStyle="bold" android:layout_weight="1"/>
                 <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/ic_notification" android:contentDescription="ic_notification"/>
-                <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/ic_profile" android:contentDescription="ic_profile" android:layout_marginStart="16dp"/>
+                <ImageView android:id="@+id/imgHeaderProfile" android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/ic_profile" android:contentDescription="ic_profile" android:layout_marginStart="16dp"/>
             </LinearLayout>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hi, Juan Dela Cruz! 👋" android:textSize="21sp" android:textColor="#242424" android:textStyle="bold" android:layout_marginTop="12dp"/>
             <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ready to find your next favorite meal?" android:textSize="12sp" android:textColor="#737B75" android:layout_marginTop="4dp"/>
@@ -72,15 +72,15 @@
                 <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="13dp">
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quick Actions" android:textSize="16sp" android:textColor="#242424" android:textStyle="bold"/>
                     <LinearLayout android:layout_width="match_parent" android:layout_height="92dp" android:orientation="horizontal" android:layout_marginTop="10dp" android:baselineAligned="false">
-                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center">
+                        <LinearLayout android:id="@+id/actionMakeReservations" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center">
                             <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_calendar" android:contentDescription="ic_calendar"/>
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Make Reservations" android:textSize="11sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="6dp"/>
                         </LinearLayout>
-                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center" android:layout_marginStart="7dp">
+                        <LinearLayout android:id="@+id/actionBrowseRestaurants" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center" android:layout_marginStart="7dp">
                             <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_search" android:contentDescription="ic_search"/>
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Browse Restaurants" android:textSize="11sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="6dp"/>
                         </LinearLayout>
-                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center" android:layout_marginStart="7dp">
+                        <LinearLayout android:id="@+id/actionMyFavorites" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:background="#EDF7EF" android:gravity="center" android:layout_marginStart="7dp">
                             <ImageView android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/ic_heart" android:contentDescription="ic_heart"/>
                             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="My Favorites" android:textSize="11sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="6dp"/>
                         </LinearLayout>
@@ -136,23 +136,23 @@
         </LinearLayout>
     </ScrollView>
     <LinearLayout android:layout_width="0dp" android:layout_height="65dp" android:orientation="horizontal" android:id="@+id/bottomNavigation" android:background="#FFFFFF" android:elevation="6dp" android:gravity="center_vertical" android:paddingStart="5dp" android:paddingEnd="5dp" android:baselineAligned="false" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+        <LinearLayout android:id="@+id/navDashboard" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
             <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_dashboard" android:contentDescription="ic_dashboard"/>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dashboard" android:textSize="9sp" android:textColor="#247A48" android:textStyle="bold" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
         </LinearLayout>
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+        <LinearLayout android:id="@+id/navExplore" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
             <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_explore" android:contentDescription="ic_explore"/>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Explore" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
         </LinearLayout>
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+        <LinearLayout android:id="@+id/navReservations" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
             <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_reservations" android:contentDescription="ic_reservations"/>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reservations" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
         </LinearLayout>
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+        <LinearLayout android:id="@+id/navFavorites" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
             <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_heart" android:contentDescription="ic_heart"/>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Favorites" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
         </LinearLayout>
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
+        <LinearLayout android:id="@+id/navProfile" android:clickable="true" android:focusable="true" android:layout_width="0dp" android:layout_height="match_parent" android:orientation="vertical" android:layout_weight="1" android:gravity="center">
             <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_profile" android:contentDescription="ic_profile"/>
             <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Profile" android:textSize="9sp" android:textColor="#777777" android:gravity="center" android:layout_marginTop="4dp" android:singleLine="true"/>
         </LinearLayout>

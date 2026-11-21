@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.MyApplicationTechKnowsball" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="Theme.MyApplicationTechKnowsball" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#396A25</item>
+        <item name="colorPrimaryVariant">#247A48</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#E49A27</item>
+        <item name="colorSecondaryVariant">#B77B14</item>
+        <item name="colorOnSecondary">#000000</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+    </style>
 </resources>
