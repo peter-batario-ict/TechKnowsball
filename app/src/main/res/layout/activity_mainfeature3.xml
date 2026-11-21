@@ -1,425 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ReserveBites.Mainfeature">
+    android:orientation="vertical"
+    android:background="#F7FAF7">
 
-    <Button
-        android:id="@+id/button26"
-        android:layout_width="441dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="508dp"
-        android:layout_marginBottom="139dp"
-        android:foreground="@drawable/screenshot_2026_10_14_134502"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize,VisualLintBounds" />
+    <!-- HEADER -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
 
-    <Button
-        android:id="@+id/button27"
-        android:layout_width="444dp"
-        android:layout_height="74dp"
-        android:layout_marginTop="592dp"
-        android:layout_marginBottom="65dp"
-        android:foreground="@drawable/screenshot_2026_10_14_134608"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize,VisualLintBounds" />
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="0dp"
+            android:text="‹"
+            android:textColor="#237A3B"
+            android:textSize="30sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/button25"
-        android:layout_width="441dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="430dp"
-        android:foreground="@drawable/screenshot_2026_10_14_134302"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize,VisualLintOverlap,VisualLintBounds" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🍴 ReserveBites"
+            android:textColor="#27813D"
+            android:textStyle="bold"
+            android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:foreground="@drawable/screenshot_2026_10_08_131533"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,VisualLintBounds"
-        tools:layout_editor_absoluteX="-5dp"
-        tools:layout_editor_absoluteY="33dp" />
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="0dp"
+            android:text="♢"
+            android:textColor="#27813D"
+            android:textSize="22sp"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="101dp"
-        android:layout_height="36dp"
-        android:text="ReserveBites"
-        android:textColor="#368734"
-        android:textColorLink="#8BBA49"
-        android:textSize="16sp"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TextContrastCheck,VisualLintOverlap"
-        tools:layout_editor_absoluteX="88dp"
-        tools:layout_editor_absoluteY="46dp" />
+    <!-- SCROLLABLE CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:foreground="@drawable/screenshot_2026_10_08_131909"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap"
-        tools:layout_editor_absoluteX="318dp"
-        tools:layout_editor_absoluteY="46dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="My Favorites"
-        android:textSize="16sp"
-        tools:ignore="HardcodedText,MissingConstraints,VisualLintOverlap"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="88dp" />
+            <!-- TITLE -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="♡ My Favorites"
+                android:textColor="#237A3B"
+                android:textSize="25sp"
+                android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="168dp"
-        android:layout_height="30dp"
-        android:text="Your saved restaurants for easy access and quick reservations."
-        android:textSize="10sp"
-        tools:ignore="HardcodedText,MissingConstraints,SmallSp,TextSizeCheck,VisualLintOverlap"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="110dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Your saved restaurants, all in one place."
+                android:textColor="#777777"
+                android:textSize="13sp" />
 
-    <Button
-        android:id="@+id/button17"
-        android:layout_width="343dp"
-        android:layout_height="48dp"
-        android:foreground="@drawable/screenshot_2026_10_14_132701"
-        android:text="Search your favorites..."
-        tools:ignore="HardcodedText,MissingConstraints,TextContrastCheck,VisualLintButtonSize"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="148dp" />
+            <!-- SEARCH -->
+            <EditText
+                android:id="@+id/searchFavorites"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#368C4A"
+                android:background="@android:drawable/edit_text"
+                android:hint="Search your favorites..."
+                android:paddingHorizontal="14dp"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:inputType="text" />
 
-    <Button
-        android:id="@+id/button18"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:foreground="@drawable/screenshot_2026_10_14_132840"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TextSizeCheck,VisualLintBounds"
-        tools:layout_editor_absoluteX="366dp"
-        tools:layout_editor_absoluteY="148dp" />
+            <!-- CATEGORY TABS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:gravity="center">
 
-    <Button
-        android:id="@+id/button20"
-        android:layout_width="127dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="498dp"
-        android:foreground="@drawable/screenshot_2026_10_14_133536"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText,TextSizeCheck,TouchTargetSizeCheck" />
+                <Button
+                    android:id="@+id/tabAll"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#27813D"
+                    android:text="All"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/button22"
-        android:layout_width="97dp"
-        android:layout_height="33dp"
-        android:foreground="@drawable/screenshot_2026_10_14_133318"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="206dp" />
+                <Button
+                    android:id="@+id/tabRecent"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E4F0E5"
+                    android:text="Recent"
+                    android:textColor="#27813D"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
-    <Button
-        android:id="@+id/button21"
-        android:layout_width="91dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="313dp"
-        android:layout_marginTop="202dp"
-        android:layout_marginEnd="22dp"
-        android:layout_marginBottom="514dp"
-        android:foreground="@drawable/screenshot_2026_10_14_133636"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+                <Button
+                    android:id="@+id/tabNear"
+                    android:layout_width="0dp"
+                    android:layout_height="42dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#E4F0E5"
+                    android:text="Near You"
+                    android:textColor="#27813D"
+                    android:textSize="12sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </LinearLayout>
 
-    <Button
-        android:id="@+id/button23"
-        android:layout_width="440dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="256dp"
-        android:layout_marginBottom="387dp"
-        android:foreground="@drawable/screenshot_2026_10_14_133828"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize,VisualLintBounds" />
+            <!-- RESULTS -->
+            <TextView
+                android:id="@+id/txtResults"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="10dp"
+                android:text="Saved Restaurants"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button24"
-        android:layout_width="443dp"
-        android:layout_height="84dp"
-        android:layout_marginTop="346dp"
-        android:layout_marginBottom="301dp"
-        android:foreground="@drawable/screenshot_2026_10_14_134150"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintButtonSize,VisualLintBounds" />
+            <!-- RESTAURANT CARDS -->
+            <LinearLayout
+                android:id="@+id/restaurantContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
 
-    <Button
-        android:id="@+id/button28"
-        android:layout_width="49dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="678dp"
-        android:layout_marginEnd="333dp"
-        android:layout_marginBottom="20dp"
-        android:foreground="@drawable/screenshot_2026_10_14_134849"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+        </LinearLayout>
+    </ScrollView>
 
-    <Button
-        android:id="@+id/button29"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:foreground="@drawable/screenshot_2026_10_14_134928"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="672dp" />
+    <!-- BOTTOM NAVIGATION -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
 
-    <Button
-        android:id="@+id/button30"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:foreground="@drawable/screenshot_2026_10_14_134952"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck,TextContrastCheck"
-        tools:layout_editor_absoluteX="189dp"
-        tools:layout_editor_absoluteY="671dp" />
+        <Button
+            android:id="@+id/button28"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="⌂"
+            android:textSize="25sp"
+            android:textColor="#27813D"
+            android:backgroundTint="#FFFFFF"
+            android:padding="0dp" />
 
-    <Button
-        android:id="@+id/button31"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:foreground="@drawable/screenshot_2026_10_14_135016"
-        android:text="Button"
-        tools:ignore="HardcodedText,MissingConstraints,TextSizeCheck"
-        tools:layout_editor_absoluteX="270dp"
-        tools:layout_editor_absoluteY="671dp" />
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="⌕"
+            android:textSize="25sp"
+            android:textColor="#27813D"
+            android:backgroundTint="#FFFFFF"
+            android:padding="0dp" />
 
-    <Button
-        android:id="@+id/button32"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="349dp"
-        android:layout_marginTop="678dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="26dp"
-        android:foreground="@drawable/screenshot_2026_10_14_135112"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextSizeCheck,TextContrastCheck" />
+        <Button
+            android:id="@+id/button30"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="▦"
+            android:textSize="24sp"
+            android:textColor="#27813D"
+            android:backgroundTint="#FFFFFF"
+            android:padding="0dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="265dp"
-        android:layout_marginEnd="139dp"
-        android:layout_marginBottom="447dp"
-        android:text="The Grill Master Makati"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,VisualLintOverlap" />
+        <Button
+            android:id="@+id/button31"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="♥"
+            android:textSize="23sp"
+            android:textColor="#27813D"
+            android:backgroundTint="#E4F0E5"
+            android:padding="0dp" />
 
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="127dp"
-        android:layout_marginTop="353dp"
-        android:layout_marginEnd="218dp"
-        android:layout_marginBottom="359dp"
-        android:text="Buffet 101"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,VisualLintOverlap" />
+        <Button
+            android:id="@+id/button32"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="♙"
+            android:textSize="24sp"
+            android:textColor="#27813D"
+            android:backgroundTint="#FFFFFF"
+            android:padding="0dp" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="129dp"
-        android:layout_marginTop="437dp"
-        android:layout_marginEnd="222dp"
-        android:layout_marginBottom="275dp"
-        android:text="Guevara's"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintOverlap" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="128dp"
-        android:layout_marginTop="512dp"
-        android:layout_marginEnd="153dp"
-        android:layout_marginBottom="200dp"
-        android:text="The Alley Manila Bay"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck,VisualLintOverlap" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="125dp"
-        android:layout_marginTop="595dp"
-        android:layout_marginEnd="181dp"
-        android:layout_marginBottom="117dp"
-        android:text="The Garden Cafe"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,VisualLintOverlap" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="213dp"
-        android:layout_marginEnd="294dp"
-        android:layout_marginBottom="499dp"
-        android:text="All Favorites"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="127dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="210dp"
-        android:layout_marginEnd="134dp"
-        android:layout_marginBottom="499dp"
-        android:text="Recently Added"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="93dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="302dp"
-        android:layout_marginTop="206dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="501dp"
-        android:text="Near You"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextSizeCheck" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="33dp"
-        android:layout_marginEnd="321dp"
-        android:layout_marginBottom="649dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/food"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="56dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="81dp"
-        android:layout_marginEnd="344dp"
-        android:layout_marginBottom="602dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/screenshot_2026_10_08_132139"
-        tools:ignore="ContentDescription" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="408dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="700dp"
-        android:foreground="@drawable/screenshot_2026_10_08_131202"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,DuplicateSpeakableTextCheck,TouchTargetSizeCheck,VisualLintButtonSize" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
