@@ -239,9 +239,9 @@
         android:layout_marginTop="92dp"
         android:background="@android:color/transparent"
         android:contentDescription="ReserveBites Logo"
-        android:foreground="@drawable/food"
+        android:foreground="@drawable/reserve_bites_logo"
         android:scaleType="fitCenter"
-        android:src="@drawable/reservebites_logo"
+        android:src="@drawable/reserve_bites_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

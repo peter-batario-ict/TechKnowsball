@@ -44,38 +44,23 @@ public class Login extends AppCompatActivity {
                     return insets;
                 });
 
-        editTextEmail = findViewById(
-                R.id.editTextTextEmailAddress3
-        );
-
-        editTextPassword = findViewById(
-                R.id.editTextNumberPassword2
-        );
-
+        editTextEmail = findViewById(R.id.editTextTextEmailAddress3);
+        editTextPassword = findViewById(R.id.editTextNumberPassword2);
         buttonLogin = findViewById(R.id.button4);
 
-        // Login button navigates to Dashboard
+        // Login button (button4) navigates to Dashboard.java
         if (buttonLogin != null) {
             buttonLogin.setOnClickListener(v -> navigateToDashboard());
         }
 
-        // Google Login button is DISPLAY ONLY.
-        // No click listener is assigned.
+        // Google Login button (button12) is DISPLAY ONLY.
+        // No click listener is assigned so it does not navigate anywhere.
     }
 
     private void navigateToDashboard() {
+        Toast.makeText(this, "Logging in...", Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(
-                this,
-                "Logging in...",
-                Toast.LENGTH_SHORT
-        ).show();
-
-        Intent intent = new Intent(
-                Login.this,
-                Dashboard.class
-        );
-
+        Intent intent = new Intent(Login.this, Dashboard.class);
         startActivity(intent);
         finish();
     }
