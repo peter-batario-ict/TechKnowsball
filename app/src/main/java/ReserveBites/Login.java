@@ -19,39 +19,63 @@ public class Login extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPassword;
     private Button buttonLogin;
-    private Button buttonGoogleLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login2);
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        ViewCompat.setOnApplyWindowInsetsListener(
+                findViewById(R.id.main), (v, insets) -> {
 
-        editTextEmail = findViewById(R.id.editTextTextEmailAddress3);
-        editTextPassword = findViewById(R.id.editTextNumberPassword2);
+                    Insets systemBars = insets.getInsets(
+                            WindowInsetsCompat.Type.systemBars()
+                    );
+
+                    v.setPadding(
+                            systemBars.left,
+                            systemBars.top,
+                            systemBars.right,
+                            systemBars.bottom
+                    );
+
+                    return insets;
+                });
+
+        editTextEmail = findViewById(
+                R.id.editTextTextEmailAddress3
+        );
+
+        editTextPassword = findViewById(
+                R.id.editTextNumberPassword2
+        );
+
         buttonLogin = findViewById(R.id.button4);
-        buttonGoogleLogin = findViewById(R.id.button12);
 
-        // Clicking Login button directly navigates to Dashboard (activity_dashboard.xml)
+        // Login button navigates to Dashboard
         if (buttonLogin != null) {
             buttonLogin.setOnClickListener(v -> navigateToDashboard());
         }
 
-        // Clicking Google Login also navigates to Dashboard
-        if (buttonGoogleLogin != null) {
-            buttonGoogleLogin.setOnClickListener(v -> navigateToDashboard());
-        }
+        // Google Login button is DISPLAY ONLY.
+        // No click listener is assigned.
     }
 
     private void navigateToDashboard() {
-        Toast.makeText(this, "Logging in...", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(Login.this, Dashboard.class);
+
+        Toast.makeText(
+                this,
+                "Logging in...",
+                Toast.LENGTH_SHORT
+        ).show();
+
+        Intent intent = new Intent(
+                Login.this,
+                Dashboard.class
+        );
+
         startActivity(intent);
         finish();
     }

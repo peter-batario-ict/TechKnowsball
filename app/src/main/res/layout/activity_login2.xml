@@ -191,6 +191,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="HardcodedText,SmallSp" />
 
+
     <Button
         android:id="@+id/button12"
         android:layout_width="243dp"
@@ -201,13 +202,13 @@
         android:layout_marginBottom="78dp"
         android:text="Login with Google"
         android:textColor="#396A25"
-        android:textDirection="firstStrongRtl"
-        android:textIsSelectable="true"
+        android:clickable="false"
+        android:focusable="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText,TextContrastCheck" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <Button
         android:id="@+id/button4"
@@ -229,22 +230,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.515"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
 
-    <Button
+    <ImageButton
         android:id="@+id/button9"
         android:layout_width="104dp"
         android:layout_height="65dp"
-        android:layout_marginStart="157dp"
         android:layout_marginTop="92dp"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="591dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@android:color/transparent"
+        android:contentDescription="ReserveBites Logo"
+        android:foreground="@drawable/food"
+        android:scaleType="fitCenter"
+        android:src="@drawable/reservebites_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress3"
